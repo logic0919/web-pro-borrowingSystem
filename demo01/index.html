@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Refresh" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书管理系统</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <script src="./js/index.js"></script>
+    <script>
+        const toAdd=()=>{
+            location.href = "D:/vscode/%E4%BB%A3%E7%A0%81/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/demo01/addBook.html"
+        }
+        const toStar=()=>{
+            location.href = "D:/vscode/%E4%BB%A3%E7%A0%81/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/demo01/myStar.html"
+        }
+    </script>
+</head>
+<body>
+    <div class="home">
+        <div class="com-top">
+            <span class="logo">借书系统</span>
+            <div class="search">
+                <input type="text" placeholder="输入搜索内容" name="" id="">
+                <div class="searchShow">
+                    <h3>搜索历史</h3>
+                    <div class="com-line" style="margin-left: 0px;"></div>
+                    <div class="history">
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                        <div class="historyItem">追风筝的人</div>
+                    </div>
+                </div>
+                <span class="icon-search">&nbsp;</span>
+            </div>
+            <button class="login" id="login">登录</button>
+        </div>
+        <div class="com-line"></div>
+        <div class="article">
+            <div class="aside">
+                <div class="nav">
+                    <ul>
+                        <li style="background-color: rgb(105, 105, 105);"><span class="icon-database">&nbsp;</span>藏书阁</li>
+                        <li><span class="icon-star-full">&nbsp;</span>我的订阅</li>
+                        <li onclick="toStar()"><span class="icon-heart">&nbsp;</span>我的关注</li>
+                        <li><span class="icon-price-tag">&nbsp;</span>排行榜</li>
+                        <li onclick="toAdd()"><span class="icon-plus">&nbsp;</span>添加新书</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 1px;background-color: rgb(147, 147, 147);"></div>
+            <div class="main">
+                <div class="swipe">
+                    <span class="leftArrow"><</span>
+                    <span class="rightArrow">></span>
+                    <span class="swipe-box">
+                        <img src="./assets/swipe01.jpg" alt="">
+                        <img src="./assets/swipe02.png" alt="">
+                        <img src="./assets/swipe03.png" alt="">
+                        <img src="./assets/swipe01.jpg" alt="">
+                    </span>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="bookShow">
+                    <div class="com-book">
+                        <img src="./assets/book01.jpg" alt="">
+                        <div class="bookName">人类简史</div>
+                        <div class="auth">尤瓦尔·赫拉利</div>
+                        <div class="publisher">中信出版社</div>
+                    </div>
+                    <div class="com-book">
+                        <img src="./assets/book02.jpg" alt="">
+                        <div class="bookName">三体3</div>
+                        <div class="auth">刘慈欣</div>
+                        <div class="publisher">重庆出版社</div>
+                    </div>
+                    <div class="com-book">
+                        <img src="./assets/book03.jpg" alt="">
+                        <div class="bookName">三体1</div>
+                        <div class="auth">刘慈欣</div>
+                        <div class="publisher">重庆出版社</div>
+                    </div>
+                    <div class="com-book">
+                        <img src="./assets/book04.jpg" alt="">
+                        <div class="bookName">三体2</div>
+                        <div class="auth">刘慈欣</div>
+                        <div class="publisher">重庆出版社</div>
+                    </div>
+                    <div class="com-book">
+                        <img src="./assets/book05.jpg" alt="">
+                        <div class="bookName">杀死一只知更鸟</div>
+                        <div class="auth">李 李育超</div>
+                        <div class="publisher">上海文艺出版社</div>
+                    </div>
+                    <div class="com-book">
+                        <img src="./assets/book06.jpg" alt="">
+                        <div class="bookName">三追风筝的人</div>
+                        <div class="auth">胡赛尼 李继宏</div>
+                        <div class="publisher">上海人民出版社</div>
+                    </div>
+                    <div class="com-book com-hiddenBook"></div>
+                    <div class="com-book com-hiddenBook"></div>
+                    <!-- <div class="com-star">
+                        <img src="./assets/book06.jpg" alt="">
+                        <div class="text">
+                            <div class="bookName">三追风筝的人</div>
+                            <div class="auth">胡赛尼 李继宏</div>
+                            <div class="publisher">上海人民出版社</div>
+                            <div class="btn">取消关注</div>
+                        </div>
+                    </div>
+                    <div class="com-star">
+                        <img src="./assets/book06.jpg" alt="">
+                        <div class="text">
+                            <div class="bookName">三追风筝的人</div>
+                            <div class="auth">胡赛尼 李继宏</div>
+                            <div class="publisher">上海人民出版社</div>
+                            <div class="btn">取消关注</div>
+                        </div>
+                    </div>
+                    <div class="com-star">
+                        <img src="./assets/book06.jpg" alt="">
+                        <div class="text">
+                            <div class="bookName">三追风筝的人</div>
+                            <div class="auth">胡赛尼 李继宏</div>
+                            <div class="publisher">上海人民出版社</div>
+                            <div class="btn">取消关注</div>
+                        </div>
+                    </div>
+                    <div class="com-star">
+                        <img src="./assets/book06.jpg" alt="">
+                        <div class="text">
+                            <div class="bookName">三追风筝的人</div>
+                            <div class="auth">胡赛尼 李继宏</div>
+                            <div class="publisher">上海人民出版社</div>
+                            <div class="btn">取消关注</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            </div>    
+    </div>
+</body>
+</html>

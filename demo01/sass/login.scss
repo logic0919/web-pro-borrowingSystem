@@ -1,0 +1,170 @@
+@import './common.scss';
+.main {
+    width: 100vw;
+    height: 100vh;
+    // width: 97vw;
+    // height: 96vh;
+    // margin-top: 2vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        width: 60%;
+        min-width: 600px;
+        // border: 1px solid red;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .right {
+        width: 40%;
+        min-width: 430px;
+        .form {
+            width: 70%;
+            height: 70vh;
+            margin: 0 auto;
+            margin-top: 12vh;
+            background-color: rgb(255, 255, 255);
+            padding-top: 60px;
+            border-radius: 10px;
+            .formMain {
+                width: 70%;
+                height: 400px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 0 auto;
+                // border: 1px solid red;
+                .logo {
+                    height: 65px;
+                    line-height: 300%;
+                    // border: 1px solid red;
+                }
+                .nav {
+                    height: 40px;
+                    // border: 1px solid red;
+                    // display: flex;
+                    // align-content: center;
+                    span {
+                        cursor: pointer;
+                        display: inline-block;
+                        width: 36%;
+                        height: 40px;
+                        color: rgb(138, 138, 138);
+                        font-size: 15px;
+                        // font-weight: 700;
+                        // padding-left: 15px;
+                        // padding-right: 15px;
+                        line-height: 35px;
+                        // line-height: 300%;
+                        border-bottom: 2px solid rgb(138, 138, 138);
+                        border-color: rgb(138, 138, 138);
+                        &:nth-child(1) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .tel {
+                    height: 180px;
+                }
+                .tel,
+                .pwd {
+                    // display: flex;
+                    display: none;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    // border: 1px solid red;
+                    &>input {
+                        width: 100%;
+                    }
+                    .code {
+                        height: 45px;
+                        position: relative;
+                        input {
+                            width: 67%;
+                            height: 100%;
+                            outline: none;
+                        }
+                        button {
+                            font-size: 15px;
+                            display: inline-block;
+                            width: 30%;
+                            height: 100%;
+                            position: absolute;
+                            right: 3px;
+                            padding-left: 4px;
+                            color: rgb(109, 109, 109);
+                            font-size: 13px;
+                            background-color: rgb(242, 242, 242);
+                        }
+                    }
+                    input {
+                        height: 45px;
+                        outline: none;
+                        padding-left: 10px;
+                        border-color: transparent;
+                        background-color: rgb(242, 242, 242);
+                    }
+                    button {
+                        width: 80%;
+                        margin: 0 auto;
+                        height: 40px;
+                        background-color: rgb(33,90,229);
+                        color: rgb(255, 255, 255);
+                        border-color: transparent;
+                        border-radius: 3px;
+                    }
+                }
+                .pwd {
+                    height: 40%;
+                    // display: none;
+                    display: flex;
+                    .code {
+                        input {
+                            width: 100%;
+                        }
+                        button {
+                            width: 15%;
+                            border-left: 1px solid rgb(176, 176, 176);
+                        }
+                    }
+                }
+                .other {
+                    display: flex;
+                    justify-content: left;
+                    color: rgb(117, 117, 117);
+                    margin: 0 auto;
+                    .img {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 10px;
+                        background-color: rgb(236, 236, 236);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 5px;
+                        img {
+                                margin: 0 auto;
+                                width: 15px;
+                                height: 15px;
+                                // vertical-align: baseline;
+                            }
+                    }
+                }
+                .agree {
+                    // height: 10px;
+                    // border: 1px solid red;
+                    text-align: center;
+                    i {
+                        color: rgb(33, 90, 229);
+                    }
+                }
+            }
+        }
+    }
+}
